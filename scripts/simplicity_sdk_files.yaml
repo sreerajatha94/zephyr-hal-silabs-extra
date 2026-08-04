@@ -6,6 +6,25 @@ paths:
   - package: platform_common
     paths:
       - "platform/common/inc/sl*_code_classification.h"
+  - package: platform_core
+    paths:
+      - "platform/plugin/security_manager/*.[ch]"
+      - "platform/security/sl_component/sl_psa_driver/inc/psa/internal_trusted_storage.h"
+      - "platform/security/sl_component/sl_psa_driver/inc/psa/sli_internal_trusted_storage.h"
+      - "platform/service/legacy_hal/inc/hal.h"
+      - "platform/service/legacy_hal/inc/hal/hal.h"
+      - "platform/service/legacy_hal/inc/micro.h"
+      - "platform/service/legacy_hal/inc/micro-types.h"
+      - "platform/service/legacy_hal/inc/micro-common.h"
+      - "platform/service/legacy_hal/inc/efm32_micro.h"
+      - "platform/service/legacy_hal/inc/reset-def.h"
+      - "platform/service/legacy_hal/inc/serial.h"
+      - "platform/service/legacy_hal/inc/serial/serial.h"
+      - "platform/service/legacy_hal/inc/crc.h"
+      - "platform/service/legacy_hal/inc/random.h"
+      - "platform/service/legacy_hal/inc/cortexm3/diagnostic.h"
+      - "platform/service/token_manager/legacy/inc/sl_token_manufacturing_generic.h"
+      - "platform/service/token_manager/legacy/inc/sl_token_manager_af_token_header.h"
   - package: security_libcryptosoc
     prefix: "util/third_party/crypto_ip/libcryptosoc"
     paths:
