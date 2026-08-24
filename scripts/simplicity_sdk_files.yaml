@@ -24,7 +24,6 @@ paths:
       - "platform/service/legacy_hal/inc/random.h"
       - "platform/service/legacy_hal/inc/cortexm3/diagnostic.h"
       - "platform/service/token_manager/legacy/inc/sl_token_manufacturing_generic.h"
-      - "platform/service/token_manager/legacy/inc/sl_token_manager_af_token_header.h"
   - package: security_libcryptosoc
     prefix: "util/third_party/crypto_ip/libcryptosoc"
     paths:
