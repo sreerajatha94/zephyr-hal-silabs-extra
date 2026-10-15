@@ -23,4 +23,20 @@ a default Zephyr workspace layout where `hal_silabs` is checked out to a sibling
 
 where `<path/to/simplicity_sdk>` points to a checked out copy of the Simplicity SDK git repository.
 
+
+### Z3 Light ZAP / Studio autogen (MSLA)
+
+Application ZAP output for the Zephyr `zigbee_z3_light` sample lives under
+`samples/zigbee_z3_light/autogen/` in this module (not in the public
+`zephyr-silabs` sample tree). Refresh after regenerating in Simplicity Studio:
+
+```
+rsync -a --delete \
+  <sisdk>/zigbee_app/z3/zigbee_z3_light/build/<app>/autogen/ \
+  samples/zigbee_z3_light/autogen/
+```
+
+Do not add these paths to `simplicity_sdk_files.yaml`; they are app-generated,
+not SDK package imports.
+
 See the README in `hal_silabs` for more details about commit naming requirements etc.
